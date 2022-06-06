@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e05b0d9381ae2fafb5ee0df7a96c5ae2",
+    "content-hash": "d5601cdcf491df374b45c92c86ea7722",
     "packages": [
         {
             "name": "box/spout",
@@ -1437,6 +1437,42 @@
                 }
             ],
             "time": "2022-05-25T02:00:06+00:00"
+        },
+        {
+            "name": "infinitypaul/credit-check",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/CreditCheck",
+                "reference": "9c66c23d413b07e44dc1385c9357e62e09dce62b"
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Infinitypaul\\CreditCheck\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Infinitypaul\\CreditCheck\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova tool.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "laravel/framework",
